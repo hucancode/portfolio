@@ -1,23 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createGlobalStyle } from 'styled-components'
-import tw from 'twin.macro';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-      ${tw`
-        bg-indigo-300
-        dark:bg-gray-900
-      `}
-  }
-`
-
 ReactDOM.render(
     <React.StrictMode>
-        <GlobalStyle />
         <App />
     </React.StrictMode>,
     document.getElementById('root')
